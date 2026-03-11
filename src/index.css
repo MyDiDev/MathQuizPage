@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-math-mint: #ffffff;
+  --color-math-teal: #570299;
+  --color-math-dark-teal: #49027e;
+  --color-math-slate: #2D3748;
+  --font-sans: "Inter", "sans-serif";
+}
+
+body {
+  background-color: #F0F7F6;
+  color: #2D3748;
+  /* math-slate */
+  font-family: "Inter", "sans-serif";
+}
+
+/* Custom button styles to match the UI reference */
+.btn-primary {
+  background-color: #570299;
+  /* math-teal */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-primary:hover {
+  background-color: #49027e;
+  /* math-dark-teal */
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 2px solid #E2E8F0;
+  /* slate-200 */
+  color: #570299;
+  /* math-slate */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-secondary:hover {
+  background-color: #F8FAFC;
+  /* slate-50 */
+}
